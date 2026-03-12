@@ -4,9 +4,9 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const values = [
-  { icon: '🐾', title: 'Personalized Care', desc: 'Every pet is unique. We tailor each session to your furry friend\'s personality and needs.' },
-  { icon: '✂️', title: 'Professional Grooming', desc: 'Skilled groomers with years of experience working with all breeds and coat types.' },
-  { icon: '💆', title: 'Stress-Free Experience', desc: 'A calm, gentle environment designed to keep even the most anxious pets relaxed.' },
+  { icon: '🐾', title: 'Individuāla pieeja', desc: 'Katrs mājdzīvnieks ir īpašs. Mēs pielāgojam katru apmeklējumu tieši tava drauga rakstura un vajadzībām.' },
+  { icon: '✂️', title: 'Profesionāla kopšana', desc: 'Pieredzējuši frizieri, kas strādā ar visām šķirnēm un spalvas tipiem.' },
+  { icon: '💆', title: 'Mierīga vide', desc: 'Klusa un maiga atmosfēra, kas nodrošina relaksāciju pat visaizkaitināmākajiem mājdzīvniekiem.' },
 ]
 
 export default function About() {
@@ -24,27 +24,28 @@ export default function About() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <span className="text-sm font-medium text-accent tracking-widest uppercase mb-4 block">
-              Our Story
+              Mūsu stāsts
             </span>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-dark leading-tight mb-6">
-              A Sanctuary for
+              Patvērums
               <br />
-              <span className="text-primary italic">Your Beloved Pet</span>
+              <span className="text-primary italic">tavam mīļajam mazulim</span>
             </h2>
             <p className="text-dark/65 leading-relaxed mb-6 text-base">
-              Ķepu SPA was born from a simple belief — pets deserve the same quality of care and attention that we
-              give ourselves. Women-owned and passionately run, our salon is a peaceful haven where animals feel
-              safe, comfortable, and truly loved.
+              Ķepu SPA dzima no vienas vienkāršas pārliecības — mājdzīvnieki ir pelnījuši tādu pašu
+              rūpību un uzmanību kā mēs paši. Sieviešu vadīts salons ir mierīgs patvērums, kur dzīvnieki
+              jūtas droši, ērti un patiesi mīlēti.
             </p>
             <p className="text-dark/65 leading-relaxed mb-8 text-base">
-              Diana and the team take time to understand your pet's individual needs, ensuring every visit is
-              a positive, stress-free experience. We specialize in dogs and cats of all breeds, sizes, and temperaments.
+              Diāna un komanda velta laiku, lai izprastu katra mājdzīvnieka individuālās vajadzības,
+              nodrošinot, ka katrs apmeklējums ir pozitīva un bezstresa pieredze. Mēs specializējamies
+              suņu un kaķu kopšanā — visās šķirnēs, izmēros un raksturos.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all duration-200"
             >
-              Meet us in person →
+              Iepazīstieties ar mums →
             </a>
           </motion.div>
 

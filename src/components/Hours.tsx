@@ -3,22 +3,32 @@ import { motion, useInView } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
 
 const schedule = [
-  { day: 'Monday', hours: '10:00 – 20:00', open: true },
-  { day: 'Tuesday', hours: '10:00 – 20:00', open: true },
-  { day: 'Wednesday', hours: '10:00 – 20:00', open: true },
-  { day: 'Thursday', hours: '10:00 – 20:00', open: true },
-  { day: 'Friday', hours: '10:00 – 20:00', open: true },
-  { day: 'Saturday', hours: '10:00 – 18:00', open: true },
-  { day: 'Sunday', hours: 'Closed', open: false },
+  { day: 'Pirmdiena', hours: '10:00 – 20:00', open: true },
+  { day: 'Otrdiena', hours: '10:00 – 20:00', open: true },
+  { day: 'Trešdiena', hours: '10:00 – 20:00', open: true },
+  { day: 'Ceturtdiena', hours: '10:00 – 20:00', open: true },
+  { day: 'Piektdiena', hours: '10:00 – 20:00', open: true },
+  { day: 'Sestdiena', hours: '10:00 – 18:00', open: true },
+  { day: 'Svētdiena', hours: 'Slēgts', open: false },
 ]
+
+const dayMap: Record<string, string> = {
+  Sunday: 'Svētdiena',
+  Monday: 'Pirmdiena',
+  Tuesday: 'Otrdiena',
+  Wednesday: 'Trešdiena',
+  Thursday: 'Ceturtdiena',
+  Friday: 'Piektdiena',
+  Saturday: 'Sestdiena',
+}
 
 function isCurrentlyOpen(): boolean {
   const now = new Date()
-  const day = now.getDay() // 0 = Sunday
+  const day = now.getDay()
   const hour = now.getHours()
   const min = now.getMinutes()
   const time = hour + min / 60
-  if (day === 0) return false // Sunday
+  if (day === 0) return false
   if (day >= 1 && day <= 5) return time >= 10 && time < 20
   if (day === 6) return time >= 10 && time < 18
   return false
@@ -33,7 +43,8 @@ export default function Hours() {
     setOpen(isCurrentlyOpen())
   }, [])
 
-  const today = new Date().toLocaleDateString('en-US', { weekday: 'long' })
+  const todayEN = new Date().toLocaleDateString('en-US', { weekday: 'long' })
+  const today = dayMap[todayEN] ?? ''
 
   return (
     <section id="hours" className="py-24 px-6 bg-cream" ref={ref}>
@@ -45,10 +56,10 @@ export default function Hours() {
           transition={{ duration: 0.7 }}
         >
           <span className="text-sm font-medium text-accent tracking-widest uppercase mb-4 block">
-            Visit Us
+            Apmeklējiet mūs
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-dark mb-6">
-            Opening <span className="text-primary italic">Hours</span>
+            Darba <span className="text-primary italic">laiks</span>
           </h2>
           <span
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium ${
@@ -58,7 +69,7 @@ export default function Hours() {
             }`}
           >
             <span className={`w-2 h-2 rounded-full ${open ? 'bg-green-500' : 'bg-red-400'}`} />
-            {open ? 'We\'re Open Now' : 'Currently Closed'}
+            {open ? 'Šobrīd atvērts' : 'Šobrīd slēgts'}
           </span>
         </motion.div>
 
@@ -83,7 +94,7 @@ export default function Hours() {
                   isToday ? 'text-primary font-semibold' : 'text-dark/70'
                 }`}>
                   {row.day}
-                  {isToday && <span className="ml-2 text-xs text-accent">(Today)</span>}
+                  {isToday && <span className="ml-2 text-xs text-accent">(Šodien)</span>}
                 </span>
                 <span className={`text-sm ${
                   row.open ? 'text-dark/70' : 'text-dark/30 italic'

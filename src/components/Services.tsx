@@ -5,38 +5,38 @@ import { useRef } from 'react'
 const services = [
   {
     icon: '🛁',
-    title: 'Full Grooming Package',
-    desc: 'Complete care including bath, blow-dry, haircut, nail trim, ear cleaning, and finishing touches.',
-    tag: 'Most Popular',
+    title: 'Pilnā kopšanas pakotne',
+    desc: 'Pilna aprūpe — mazgāšana, žāvēšana, cirpšana, nagu griešana, ausu tīrīšana un apdares darbi.',
+    tag: 'Populārākais',
   },
   {
     icon: '💨',
-    title: 'Express Bath & Blow-Dry',
-    desc: 'A thorough wash and professional blow-dry to leave your pet fresh, clean, and fluffy.',
+    title: 'Ātrā mazgāšana un žāvēšana',
+    desc: 'Rūpīga mazgāšana un profesionāla žāvēšana, lai tavs mājdzīvnieks izskatītos svaigs un pūkains.',
     tag: null,
   },
   {
     icon: '✂️',
-    title: 'Nail Clipping',
-    desc: 'Careful and precise nail trimming to keep your pet comfortable and floors scratch-free.',
+    title: 'Nagu griešana',
+    desc: 'Uzmanīga un precīza nagu apgriešana, lai mājdzīvnieks būtu ērts un grīdas — nesaskrāpētas.',
     tag: null,
   },
   {
     icon: '👂',
-    title: 'Ear Cleaning',
-    desc: 'Gentle ear cleaning to prevent infections and keep your pet healthy and comfortable.',
+    title: 'Ausu tīrīšana',
+    desc: 'Maiga ausu tīrīšana, lai novērstu infekcijas un uzturētu mājdzīvnieka veselību un komfortu.',
     tag: null,
   },
   {
     icon: '🐶',
-    title: "Puppy's First Groom",
-    desc: 'A gentle, fun introduction to grooming for puppies. We make their first time a positive memory.',
-    tag: 'Gentle & Slow',
+    title: 'Kucēna pirmā frizētava',
+    desc: 'Maiga un jautra ievads kopšanā kucēniem. Mēs parūpēsimies, lai pirmā reize būtu pozitīva atmiņa.',
+    tag: 'Maigi un lēnām',
   },
   {
     icon: '🌿',
-    title: 'De-shedding Treatment',
-    desc: 'Specialized treatment to reduce shedding, remove loose undercoat, and improve coat health.',
+    title: 'Spalvas retināšanas procedūra',
+    desc: 'Specializēta procedūra, lai samazinātu spalvas krišanu, noņemtu vaļīgo apakšspalvu un uzlabotu spalvas veselību.',
     tag: null,
   },
 ]
@@ -60,10 +60,10 @@ export default function Services() {
           transition={{ duration: 0.7 }}
         >
           <span className="text-sm font-medium text-accent tracking-widest uppercase mb-4 block">
-            What We Offer
+            Ko mēs piedāvājam
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-dark">
-            Our <span className="text-primary italic">Services</span>
+            Mūsu <span className="text-primary italic">pakalpojumi</span>
           </h2>
         </motion.div>
 
@@ -95,8 +95,8 @@ export default function Services() {
           transition={{ delay: 0.8 }}
         >
           <p className="text-dark/50 text-sm">
-            Prices available upon request ·{' '}
-            <a href="tel:20097009" className="text-primary hover:underline">Call 20 097 009</a>
+            Cenas pieejamas pēc pieprasījuma ·{' '}
+            <a href="tel:20097009" className="text-primary hover:underline">Zvaniet: 20 097 009</a>
           </p>
         </motion.div>
       </div>

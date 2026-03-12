@@ -10,20 +10,20 @@ export default function Footer() {
               <span className="font-serif text-xl font-semibold text-cream">Ķepu SPA</span>
             </div>
             <p className="text-cream/50 text-sm leading-relaxed italic">
-              &ldquo;Where every paw gets the royal treatment&rdquo;
+              &ldquo;Kur katrai ķepai ir karaliska aprūpe&rdquo;
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="font-semibold text-cream/90 mb-4 text-sm tracking-widest uppercase">Quick Links</h3>
-            <nav aria-label="Footer navigation">
+            <h3 className="font-semibold text-cream/90 mb-4 text-sm tracking-widest uppercase">Ātrās saites</h3>
+            <nav aria-label="Kājenes navigācija">
               <ul className="space-y-2">
                 {[
-                  { href: '#about', label: 'About Us' },
-                  { href: '#services', label: 'Services' },
-                  { href: '#gallery', label: 'Gallery' },
-                  { href: '#contact', label: 'Contact' },
+                  { href: '#about', label: 'Par mums' },
+                  { href: '#services', label: 'Pakalpojumi' },
+                  { href: '#gallery', label: 'Galerija' },
+                  { href: '#contact', label: 'Kontakti' },
                 ].map((l) => (
                   <li key={l.href}>
                     <a href={l.href} className="text-cream/50 hover:text-accent text-sm transition-colors">
@@ -37,10 +37,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-cream/90 mb-4 text-sm tracking-widest uppercase">Contact</h3>
+            <h3 className="font-semibold text-cream/90 mb-4 text-sm tracking-widest uppercase">Kontakti</h3>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-cream/50">
-                <span aria-hidden="true">📍</span> Kalnciema Iela 89, Rīga, LV-1046
+                <span aria-hidden="true">📍</span> Kalnciema iela 89, Rīga, LV-1046
               </li>
               <li>
                 <a href="tel:20097009" className="flex items-center gap-2 text-sm text-cream/50 hover:text-accent transition-colors">
@@ -54,7 +54,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-cream/30 text-xs">
-            © {new Date().getFullYear()} Ķepu SPA. All rights reserved.
+            © {new Date().getFullYear()} Ķepu SPA. Visas tiesības aizsargātas.
           </p>
           <div className="flex gap-2 text-cream/20 text-lg" aria-hidden="true">
             🐾 🐾 🐾

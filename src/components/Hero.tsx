@@ -34,7 +34,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm text-primary text-sm font-medium mb-8 border border-accent/30">
-            <span>🐾</span> Premium Pet Grooming · Rīga, Latvia
+            <span>🐾</span> Profesionāla dzīvnieku frizētava · Rīga, Latvija
           </span>
         </motion.div>
 
@@ -44,9 +44,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: 'easeOut' }}
         >
-          Your Pet Deserves
+          Tavs mājdzīvnieks
           <br />
-          <span className="text-primary italic">a Spa Day Too</span>
+          <span className="text-primary italic">ir pelnījis SPA dienu</span>
         </motion.h1>
 
         <motion.p
@@ -55,7 +55,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
         >
-          Premium grooming with love and care in the heart of Rīga
+          Profesionāla kopšana ar mīlestību un rūpību Rīgas sirdī
         </motion.p>
 
         <motion.div
@@ -68,7 +68,7 @@ export default function Hero() {
             href="#contact"
             className="px-8 py-4 rounded-full bg-primary text-cream font-medium text-base hover:bg-accent hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
           >
-            Book an Appointment
+            Pierakstīties vizītei
           </a>
           <a
             href="tel:20097009"
@@ -85,7 +85,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
+          <span className="text-xs tracking-widest uppercase">Ritināt</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}

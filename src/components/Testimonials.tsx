@@ -5,19 +5,19 @@ import { useRef } from 'react'
 const reviews = [
   {
     name: 'Dee Patterson',
-    text: 'Excellent, friendly personalised service from Diana. My dog looks absolutely amazing and was treated with so much kindness. Will definitely be back!',
+    text: 'Lielisks, draudzīgs un personalizēts serviss no Diānas. Mans suns izskatās absolūti brīnišķīgi un tika aprūpēts ar tādu laipnību. Noteikti atgriezīšos!',
     stars: 5,
     avatar: 'D',
   },
   {
     name: 'Kadrija Markuna',
-    text: '10 out of five stars. Very professional and sweet craftswoman. My cat came back looking like royalty. Highly recommend Ķepu SPA to every pet owner.',
+    text: '10 no pieciem zvaigznēm. Ļoti profesionāla un mīļa meistare. Mans kaķis atgriezās izskatoties kā karaļnams. Iesaku Ķepu SPA ikvienam mājdzīvnieku īpašniekam.',
     stars: 5,
     avatar: 'K',
   },
   {
     name: 'attlas567',
-    text: 'Wonderful experience! The salon is calm and welcoming. You can tell they genuinely love animals here. Our puppy was completely relaxed throughout.',
+    text: 'Brīnišķīga pieredze! Salons ir mierīgs un viesmīlīgs. Var just, ka viņi šeit patiesi mīl dzīvniekus. Mūsu kucēns bija pilnīgi atviegloties visā laikā.',
     stars: 5,
     avatar: 'A',
   },
@@ -25,7 +25,7 @@ const reviews = [
 
 function Stars({ count }: { count: number }) {
   return (
-    <div className="flex gap-1" aria-label={`${count} out of 5 stars`}>
+    <div className="flex gap-1" aria-label={`${count} no 5 zvaigznēm`}>
       {Array.from({ length: 5 }).map((_, i) => (
         <span key={i} className={i < count ? 'text-amber-400' : 'text-gray-200'} aria-hidden="true">
           ★
@@ -49,15 +49,15 @@ export default function Testimonials() {
           transition={{ duration: 0.7 }}
         >
           <span className="text-sm font-medium text-accent tracking-widest uppercase mb-4 block">
-            Google Reviews
+            Google atsauksmes
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-dark mb-4">
-            What Pet Owners <span className="text-primary italic">Say</span>
+            Ko saka mājdzīvnieku <span className="text-primary italic">īpašnieki</span>
           </h2>
           <div className="flex items-center justify-center gap-2">
             <span className="text-amber-400 text-xl">★★★★★</span>
             <span className="font-semibold text-dark">4.4</span>
-            <span className="text-dark/40 text-sm">· 14 Google Reviews</span>
+            <span className="text-dark/40 text-sm">· 14 Google atsauksmes</span>
           </div>
         </motion.div>
 

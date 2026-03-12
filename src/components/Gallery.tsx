@@ -3,14 +3,14 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const placeholders = [
-  { color: '#E8D5C4', emoji: '🐩', label: 'Freshly groomed poodle' },
-  { color: '#D4E8D4', emoji: '🐈', label: 'Happy groomed cat' },
-  { color: '#E8E0D4', emoji: '🐕', label: 'Golden retriever after bath' },
-  { color: '#D4D8E8', emoji: '🐾', label: 'Paw care treatment' },
-  { color: '#E8D4D4', emoji: '🐶', label: 'Puppy first groom' },
-  { color: '#D4E8E4', emoji: '✂️', label: 'Professional cut' },
-  { color: '#EEE4D4', emoji: '🛁', label: 'Spa bath session' },
-  { color: '#D8D4E8', emoji: '🐱', label: 'Relaxed grooming' },
+  { color: '#E8D5C4', emoji: '🐩', label: 'Tikko sakopts pudelis' },
+  { color: '#D4E8D4', emoji: '🐈', label: 'Laimīgs sakopts kaķis' },
+  { color: '#E8E0D4', emoji: '🐕', label: 'Zelta retrīvers pēc mazgāšanas' },
+  { color: '#D4D8E8', emoji: '🐾', label: 'Ķepu kopšanas procedūra' },
+  { color: '#E8D4D4', emoji: '🐶', label: 'Kucēna pirmā frizētava' },
+  { color: '#D4E8E4', emoji: '✂️', label: 'Profesionāla cirpšana' },
+  { color: '#EEE4D4', emoji: '🛁', label: 'SPA vannošanas sesija' },
+  { color: '#D8D4E8', emoji: '🐱', label: 'Relaksējoša kopšana' },
 ]
 
 export default function Gallery() {
@@ -32,10 +32,10 @@ export default function Gallery() {
           transition={{ duration: 0.7 }}
         >
           <span className="text-sm font-medium text-accent tracking-widest uppercase mb-4 block">
-            Gallery
+            Galerija
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-dark">
-            See Our <span className="text-primary italic">Happy Clients</span>
+            Mūsu <span className="text-primary italic">laimīgie klienti</span>
           </h2>
         </motion.div>
 
@@ -66,7 +66,7 @@ export default function Gallery() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.5 }}
         >
-          Replace placeholder tiles with real photos for best results.
+          Aizstājiet vietturus ar īstām fotogrāfijām vislabākajiem rezultātiem.
         </motion.p>
       </div>
     </section>

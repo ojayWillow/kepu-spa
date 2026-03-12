@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Ķepu SPA | Pet Grooming Salon in Rīga',
-  description: 'Premium dog and cat grooming salon in Rīga, Latvia. Professional, personalized grooming with love and care. Located at Kalnciema Iela 89.',
-  keywords: 'pet grooming, dog grooming, cat grooming, Rīga, Latvia, Ķepu SPA, suņu frizētava, kaķu frizētava',
+  title: 'Ķepu SPA | Dzīvnieku frizētava Rīgā',
+  description: 'Profesionāla suņu un kaķu frizētava Rīgā. Rūpīga, individuāla kopšana ar mīlestību un gādību. Adrese: Kalnciema iela 89.',
+  keywords: 'dzīvnieku frizētava, suņu frizētava, kaķu frizētava, Rīga, Latvija, Ķepu SPA, mājdzīvnieku kopšana',
   openGraph: {
-    title: 'Ķepu SPA | Pet Grooming Salon in Rīga',
-    description: 'Premium dog and cat grooming salon in Rīga, Latvia. Professional, personalized grooming with love and care.',
+    title: 'Ķepu SPA | Dzīvnieku frizētava Rīgā',
+    description: 'Profesionāla suņu un kaķu frizētava Rīgā. Rūpīga, individuāla kopšana ar mīlestību un gādību.',
     url: 'https://kepu-spa.vercel.app',
     siteName: 'Ķepu SPA',
     locale: 'lv_LV',

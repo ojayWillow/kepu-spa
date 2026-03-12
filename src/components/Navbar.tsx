@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  { href: '#about', label: 'About' },
-  { href: '#services', label: 'Services' },
-  { href: '#gallery', label: 'Gallery' },
-  { href: '#hours', label: 'Hours' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'Par mums' },
+  { href: '#services', label: 'Pakalpojumi' },
+  { href: '#gallery', label: 'Galerija' },
+  { href: '#hours', label: 'Darba laiks' },
+  { href: '#contact', label: 'Kontakti' },
 ]
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 group" aria-label="Ķepu SPA home">
+        <a href="#" className="flex items-center gap-2 group" aria-label="Ķepu SPA sākumlapa">
           <span className="text-2xl" aria-hidden="true">🐾</span>
           <span className="font-serif text-xl font-semibold text-primary tracking-wide">
             Ķepu SPA
@@ -36,7 +36,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Galvenā navigācija">
           {links.map((l) => (
             <a
               key={l.href}
@@ -50,7 +50,7 @@ export default function Navbar() {
             href="#contact"
             className="ml-4 px-5 py-2 rounded-full bg-primary text-cream text-sm font-medium hover:bg-accent transition-colors duration-200"
           >
-            Book Now
+            Pierakstīties
           </a>
         </nav>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-primary"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          aria-label="Atvērt izvēlni"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -88,7 +88,7 @@ export default function Navbar() {
               className="mt-2 px-5 py-3 rounded-full bg-primary text-cream text-center font-medium"
               onClick={() => setOpen(false)}
             >
-              Book Now
+              Pierakstīties
             </a>
           </motion.div>
         )}
